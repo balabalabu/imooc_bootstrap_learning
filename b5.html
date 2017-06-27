@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        body{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="container summary">
+    <ul class="nav nav-tabs" role="tablist" id="myTab">
+        <li class="active"><a href="#num1" role="tab" data-toggle="tab">第一项</a></li>
+        <li><a href="#num2" role="tab" data-toggle="tab">第二项</a></li>
+        <li><a href="#num3" role="tab" data-toggle="tab">第三项</a></li>
+        <li><a href="#num4" role="tab" data-toggle="tab">第四项</a></li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane active" id="num1">
+            <p>这是第一项</p>
+        </div>
+        <div class="tab-pane" id="num2">
+            <p>这是第二项</p>
+        </div>
+        <div class="tab-pane" id="num3">
+            <p>这是第三项</p>
+        </div>
+        <div class="tab-pane" id="num4">
+            <p>这是第四项</p>
+        </div>
+    </div>
+</div>
+<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script>
+    $(function () {
+        $('#myTab a[href="#num2"]').tab('show');
+    })
+</script>
+</body>
+</html>
